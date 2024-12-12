@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字</title>
+    <style>
+        /* General Page Styles */
+        body {
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            min-width: 750px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-top: 0;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        /* Button Styles */
+        #chooseFileBtn {
+            
+            background-color: #007bff;
+        }
+
+        #showAnswerBtn {
+            background-color: #28a745;
+        }
+
+        #hideAnswerBtn {
+            background-color: #ffc107;
+        }
+
+        #prevQuestionBtn {
+            background-color: #6c757d;
+        }
+
+        #nextQuestionBtn {
+            background-color: #6c757d;
+        }
+
+        #endTestBtn {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        button {
+            padding: 12px 24px;
+            margin-top: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        button:hover {
+            filter: brightness(90%);
+        }
+
+        #answer {
+            margin-top: 0px;
+            color: #28a745;
+            font-weight: bold;
+            display: none;
+            font-size: 18px;
+        }
+
+        #buttonGroup {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Table Styles - Equal Column Width */
+        .table-container {
+            overflow: auto;
+        }
+
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #f6c2c2;
+            text-align: center;
+            font-size: larger;
+            padding: 10px;
+            
+            /* Equal width for all columns */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Pagination Styles */
+        .pagination {
+            margin-top: 20px;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+        }
+
+        .pagination button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            border: none;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin: 0 4px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagination button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .pagination button.active {
+            background-color: #0056b3;
+        }
+
+        /* End Test Button at Top */
+        #endTestButtonTop {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #endTestButtonTop:hover {
+            background-color: #c82333;
+        }
+
+        /* Restart Test Button */
+        #restartTestButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #restartTestButton:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>漢字</h1>
+        <div id="question" style="display: none;"></div>
+        <div id="answer" style="display: none;"></div>
+        <br>
+        <div id="buttonGroup">
+            <button id="chooseFileBtn" onclick="openFile()">Load Questions</button>
+            <button id="prevQuestionBtn" style="display: none;" onclick="prevQuestion()">← Previous</button>
+            <button id="showAnswerBtn" style="display: none;" onclick="showAnswer()">Show</button>
+            <button id="hideAnswerBtn" style="display: none;" onclick="hideAnswer()">Hide</button>
+            <button id="nextQuestionBtn" style="display: none;" onclick="nextQuestion()">Next →</button>
+            <button id="endTestBtn" style="display: none;" onclick="endTest()">End Test</button>
+            <button id="progressBtn" style="display: none;" onclick="showProgress()">Show Progress</button>
+        </div><br/><br/>
+        <div id="progressContainer" style="display: none;">
+            <div id="progressBar" style="width: 0%; height: 3px; background-color: #28a745; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div id="pagination" class="pagination" style="display: none;"></div> <!-- Pagination container -->
+    </div>
+
+    <input type="file" id="fileInput" style="display: none;">
+    <script>
+        // Your JavaScript code
+        let kanjiData = [];
+        let testStarted = false;
+        let currentQuestionIndex = -1;
+        const itemsPerPage = 10; // Number of items per page
+
+        function openFile() {
+            document.getElementById('fileInput').click();
+        }
+
+
+
+        function readFile(input) {
+            const file = input.files[0];
+            if (!file || !file.name.endsWith('.txt')) {
+                alert('Please select a valid text file.');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                const text = event.target.result;
+                const lines = text.trim().split('\n');
+                kanjiData = lines.map(line => {
+                    const [pronunciation, character, meaning, tamilMeaning] = line.split(',');
+                    return { character, meaning, pronunciation, tamilMeaning };
+                });
+                shuffleArray(kanjiData);
+                startTest();
+            };
+            reader.readAsText(file);
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function startTest() {
+            testStarted = true;
+            currentQuestionIndex = 0;
+            showQuestion();
+
+            const chooseFileBtn = document.getElementById('chooseFileBtn');
+            const questionElement = document.getElementById('question');
+            const showAnswerBtn = document.getElementById('showAnswerBtn');
+            const progressContainer = document.getElementById('progressContainer'); // Get the progress bar container
+
+            if (chooseFileBtn && questionElement && showAnswerBtn && progressContainer) {
+                chooseFileBtn.style.display = 'none';
+                questionElement.style.display = 'block';
+                showAnswerBtn.style.display = 'block';
+                progressContainer.style.display = 'block'; // Show the progress bar when the test starts
+            } else {
+                console.error("One or more elements not found.");
+            }
+
+            // Clear any existing table and pagination
+            const resultsTable = document.querySelector('table');
+            if (resultsTable) {
+                resultsTable.remove();
+            }
+            const pagination = document.querySelector('.pagination');
+            if (pagination) {
+                pagination.remove();
+            }
+
+            // Remove any existing restart test button
+            const restartTestButton = document.getElementById('restartTestButton');
+            if (restartTestButton) {
+                restartTestButton.remove();
+            }
+
+            // Create and append the end test button
+            const endTestButton = document.createElement('button');
+            endTestButton.textContent = 'End Test';
+            endTestButton.id = 'endTestButtonTop';
+            endTestButton.style.position = 'absolute';
+            endTestButton.style.top = '10px';
+            endTestButton.style.right = '10px';
+            endTestButton.onclick = endTest;
+            document.querySelector('.container').appendChild(endTestButton);
+
+            updateProgressBar(); // Initialize the progress bar
+        }
+
+
+        function endTest() {
+            const container = document.querySelector('.container');
+            if (container) {
+                const resultsTable = document.createElement('table');
+                const startIndex = Math.floor(currentQuestionIndex / itemsPerPage) * itemsPerPage;
+                const endIndex = Math.min(startIndex + itemsPerPage, kanjiData.length);
+                resultsTable.innerHTML = `
+            <thead>
+                <tr>
+                    <th>Kanji Character</th>
+                    <th>On'yomi</th>
+                    <th>Kun'yomi</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${kanjiData.slice(startIndex, endIndex).map(kanji => `
+                    <tr>
+                        <td>${kanji.character}</td>
+                        <td>${kanji.pronunciation}</td>
+                        <td>${kanji.meaning}</td>
+                        <td>${kanji.tamilMeaning}</td>
+                    </tr>
+                `).join('')}
+            </tbody> `;
+                container.innerHTML = ''; // Clear current page
+                container.appendChild(resultsTable);
+                const pagination = document.createElement('div');
+                pagination.classList.add('pagination');
+                if (kanjiData.length > itemsPerPage) {
+                    const totalPages = Math.ceil(kanjiData.length / itemsPerPage);
+                    for (let i = 1; i <= totalPages; i++) {
+                        const button = document.createElement('button');
+                        button.innerText = i;
+                        button.addEventListener('click', () => showResultPage(i));
+                        pagination.appendChild(button);
+                    }
+                    container.appendChild(pagination);
+
+                    // Trigger click event on the first pagination button
+                    pagination.querySelector('button').click();
+                }
+
+
+                // Check if Restart Test button already exists
+                const restartTestButton = document.getElementById('restartTestButton');
+                if (!restartTestButton) {
+                    // Add Restart Test button if it doesn't exist
+                    const restartTestButton = document.createElement('button');
+                    restartTestButton.textContent = 'Restart Test';
+                    restartTestButton.id = 'restartTestButton';
+                    restartTestButton.onclick = () => window.location.reload(); // Refresh the page
+                    container.appendChild(restartTestButton);
+                }
+            } else {
+                console.error("Container element not found.");
+            }
+        }
+
+        function showAnswer() {
+            document.getElementById('answer').style.display = 'block';
+            document.getElementById('showAnswerBtn').style.display = 'none';
+            document.getElementById('hideAnswerBtn').style.display = 'block';
+        }
+
+        function hideAnswer() {
+            document.getElementById('answer').style.display = 'none';
+            document.getElementById('hideAnswerBtn').style.display = 'none';
+            document.getElementById('showAnswerBtn').style.display = 'block';
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            hideAnswer();
+            showQuestion();
+        }
+
+        function prevQuestion() {
+            currentQuestionIndex--;
+            hideAnswer();
+            showQuestion();
+        }
+
+        function showResultPage(pageNumber) {
+            const startIndex = (pageNumber - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, kanjiData.length);
+            const resultsTable = document.querySelector('table');
+
+            if (resultsTable) {
+                resultsTable.innerHTML = `
+            <thead>
+                <tr>
+                    <th>Kanji Character</th>
+                    <th>On'yomi</th>
+                    <th>Kun'yomi</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${kanjiData.slice(startIndex, endIndex).map(kanji => `
+                    <tr>
+                        <td>${kanji.character}</td>
+                        <td>${kanji.pronunciation}</td>
+                        <td>${kanji.meaning}</td>
+                        <td>${kanji.tamilMeaning}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        `;
+
+                // Update pagination buttons
+                const paginationButtons = document.querySelectorAll('.pagination button');
+                paginationButtons.forEach(button => button.classList.remove('active'));
+                paginationButtons[pageNumber - 1].classList.add('active'); // Highlight the correct button
+            } else {
+                console.error("Results table element not found.");
+            }
+        }
+
+
+        document.getElementById('fileInput').addEventListener('change', function () {
+            readFile(this);
+        });
+
+        function showProgress() {
+            const totalQuestions = kanjiData.length;
+            const currentQuestion = currentQuestionIndex + 1;
+            const progressPercentage = ((currentQuestion / totalQuestions) * 100).toFixed(2);
+
+            alert(`Progress: ${currentQuestion} out of ${totalQuestions} questions (${progressPercentage}%)`);
+        }
+
+        function showQuestion() {
+            const questionElement = document.getElementById('question');
+            const prevQuestionBtn = document.getElementById('prevQuestionBtn');
+            const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+            const endTestBtn = document.getElementById('endTestBtn');
+
+            if (questionElement && prevQuestionBtn && nextQuestionBtn && endTestBtn) {
+                const questionNumber = currentQuestionIndex + 1;
+                const totalQuestions = kanjiData.length;
+                const questionText = `質問  ${questionNumber} の ${totalQuestions}`;
+
+                if (currentQuestionIndex >= kanjiData.length) {
+                    currentQuestionIndex = 0;
+                } else if (currentQuestionIndex < 0) {
+                    currentQuestionIndex = kanjiData.length - 1;
+                }
+                const currentKanji = kanjiData[currentQuestionIndex];
+                questionElement.innerHTML = `
+                <div style="font-size: 1.5em; color: #D2691E; font-weight: bold;">${questionText}</div>
+                <br>
+                <div style="font-size: 1.6em;"><strong>この漢字の音読みと訓読みを書きなさい</strong></div>
+                <br>
+                <div style="font-size: 2em; color: #6414FF; font-weight: bold;">${currentKanji.tamilMeaning}</div>
+                <br>
+                <span style="font-size: 13em;">${currentKanji.character}</span>`;
+
+                
+                document.getElementById('answer').innerHTML = `
+                    ${currentKanji.pronunciation ? `
+                    <span style="color: black; font-size: 1.5em;">
+                    <strong>音読み :</strong>
+                    </span>
+                    <span style="font-size: 1.5em;">${currentKanji.pronunciation}</span> 
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` : ''}
+                    ${currentKanji.meaning ? `
+                    <span style="color: black; font-size: 1.5em;">
+                        <strong>訓読み : </strong>
+                    </span>     
+                    <span style="font-size: 1.5em;">${currentKanji.meaning}</span>` : ''}`;
+
+                document.getElementById('answer').style.display = 'none';
+
+                if (currentQuestionIndex === 0) {
+                    prevQuestionBtn.style.display = 'none';
+                } else {
+                    prevQuestionBtn.style.display = 'block';
+                }
+
+                if (currentQuestionIndex === kanjiData.length - 1) {
+                    nextQuestionBtn.style.display = 'none';
+                } else {
+                    nextQuestionBtn.style.display = 'block';
+                }
+
+                updateProgressBar();
+            } else {
+                console.error("One or more elements not found.");
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            hideAnswer();
+            showQuestion();
+        }
+
+        function prevQuestion() {
+            currentQuestionIndex--;
+            hideAnswer();
+            showQuestion();
+        }
+        function updateProgressBar() {
+            const totalQuestions = kanjiData.length;
+            const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100;
+
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                progressBar.style.width = progressPercentage + '%';
+            } else {
+                console.error("Progress bar element not found.");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

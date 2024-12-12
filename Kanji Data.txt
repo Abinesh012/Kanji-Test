@@ -1,0 +1,321 @@
+しゅう(shū),週,,Week  
+ねん(nen),年,とし(toshi),Year  
+こん(kon),今,いま(ima),Now  
+まい(mai),毎,,Every  
+ご(go),午,,Noon  
+じん・にん(jin/nin),人,ひと(hito),Person  
+かん(kan),間,あいだ・ま(aida/ma),Interval & Space  
+だん(dan),男,おとこ(otoko),Man  
+ふん・ぶん・ぷん(fun/bun/pun),分,わかる(wakaru),Minute & Divide  
+じ(ji),時,とき(toki),Time & Hour  
+いち(ichi),一,ひと(hito),One  
+に(ni),二,ふた(futa),Two  
+さん(san),三,み(mi),Three  
+し(shi)・よん(yon),四,よ(yo),Four  
+ご(go),五,いつ(itsu),Five  
+ろく(roku),六,む(mu),Six  
+しち(shichi)・なな(nana),七,なな(nana),Seven  
+はち(hachi),八,や(ya),Eight  
+きゅう(kyū)・く(ku),九,ここの(kokono),Nine  
+じゅう(jū),十,とお(tō),Ten  
+ひゃく(hyaku),百,,Hundred  
+せん(sen),千,,Thousand  
+げつ(getsu)・がつ(gatsu),月,つき(tsuki),Month & Moon  
+か(ka),火,ひ(hi),Fire  
+すい(sui),水,みず(mizu),Water  
+もく(moku),木,き(ki),Tree & Wood  
+きん(kin),金,かね(kane),Gold & Metal  
+ど(do),土,つち(tsuchi),Earth & Soil  
+にち(nichi)・じつ(jitsu),日,ひ・か(hi/ka),Day & Sun  
+じょ(jo),女,おんな(onna),Woman  
+ちち(chi),父,ちち(chichi),Father  
+はは(haha),母,はは(haha),Mother  
+こ(ko),子,こ(ko),Child  
+せん(sen),先,さき(saki),Ahead & Previous  
+とも(tomo),友,ともだち(tomodachi),Friend  
+もく(moku),目,め(me),Eye  
+こう(kō),口,くち(kuchi),Mouth  
+じ(ji),耳,みみ(mimi),Ear  
+せい(sei),生,いきる・うまれる(ikiru/umareru),Life & Birth  
+しゅ(shu),手,て(te),Hand  
+あし(ashi),足,あし(ashi),Leg & Foot  
+りょく(ryoku),力,ちから(chikara),Strength  
+じょう(jō),上,うえ(ue),Up & Above  
+げ(ge),下,した(shita),Down & Below  
+さ(sa),左,ひだり(hidari),Left  
+う(u),右,みぎ(migi),Right  
+とう(tō),東,ひがし(higashi),East  
+せい(sei),西,にし(nishi),West  
+なん(nan),南,みなみ(minami),South  
+ほく(hoku),北,きた(kita),North  
+ちゅう(chū),中,なか(naka),Middle & Inside  
+がい(gai),外,そと(soto),Outside  
+ぜん(zen),前,まえ(mae),Front  
+ご(go),後,あと(ato),After & Behind  
+さん(san),山,やま(yama),Mountain  
+かわ(kawa),川,かわ(kawa),River  
+か(ka),花,はな(hana),Flower  
+う(u),雨,あめ(ame),Rain  
+くう(kū),空,そら(sora),Sky & Air  
+てん(ten),天,あめ(ame)・てん(ten),Heaven & Sky  
+き(ki),気,き(ki),Spirit & Air  
+だい(dai)・たい(tai),大,おおきい(ōkii),Big & Large  
+しょう(shō),小,ちいさい(chiisai),Small  
+た(ta),多,おおい(ōi),Many  
+あん(an),安,やすい(yasui),Cheap & Safe  
+こう(kō),高,たかい(takai),High & Expensive  
+こ(ko),古,ふるい(furui),Old  
+しん(shin),新,あたらしい(atarashii),New  
+ちょう(chō),長,ながい(nagai),Long  
+しょう(shō),少,すくない(sukunai),Few  
+そう(sō),早,はやい(hayai),Early & Fast  
+はく(haku),白,しろい(shiroi),White  
+こう(kō),行,いく(iku),Go  
+らい(rai),来,くる(kuru),Come  
+しょ(sho),食,たべる(taberu),Eat  
+いん(in),飲,のむ(nomu),Drink  
+しょ(sho),書,かく(kaku),Write  
+げん(gen)・ごん(gon),言,いう(iu),Say  
+りつ(ritsu),立,たつ(tatsu),Stand  
+けん(ken),見,みる(miru),See  
+しゅつ(shutsu),出,でる(deru),Exit & Go Out  
+にゅう(nyū),入,はいる(hairu),Enter  
+どく(doku),読,よむ(yomu),Read  
+わ(wa),話,はなす(hanasu),Speak & Talk  
+ご(go),語,ことば(kotoba),Language & Word  
+ばい(bai),買,かう(kau),Buy  
+ぶん(bun),聞,きく(kiku),Hear & Ask  
+きゅう(kyū),休,やすむ(yasumu),Rest  
+ぎゅう(gyū),牛,うし(ushi),Cow  
+ば(ba),馬,うま(uma),Horse  
+ほん(hon),本,ほん(hon),Book & Origin  
+なん(nan),何,なに(nani),What  
+えん(en),円,えん(en),Yen  
+めい(mei),名,な(na),Name  
+はん(han),半,はん(han),Half  
+しゃ(sha),車,くるま(kuruma),Car  
+どう(dō),道,みち(michi),Road & Way  
+こく(koku),国,くに(kuni),Country  
+こう(kō),校,こうこう(kōkō),School  
+がく(gaku),学,まなぶ(manabu),Study & Learning  
+しゃ(sha),社,やしろ(yashiro),Company & Shrine  
+かい(kai),会,あう(au),Meet & Association  
+みせ(mise),店,みせ(mise),Shop  
+えき(eki),駅,えき(eki),Station  
+ぎょ(gyo),魚,さかな(sakana),Fish  
+でん(den),電,でんき(denki),Electricity
+ばん(ban),万,まん(man),Ten Thousand  
+きん(kin),近,ちかい(chikai),Near  
+ゆう(yū),有,ある(aru),Have & Exist  
+せき(seki),赤,あか(aka),Red  
+し(shi),紙,かみ(kami),Paper  
+ちょう(chō),朝,あさ(asa),Morning  
+ちゅう(chū),昼,ひる(hiru),Noon & Day  
+せき(seki),夕,ゆう(yū),Evening  
+や(ya),夜,よる(yoru),Night  
+か(ka),家,いえ(ie),House  
+こう(kō),広,ひろい(hiroi),Wide & Spacious  
+ち(chi),知,しる(shiru),Know  
+げん(gen)・ごん(gon),言,いう(iu),Say  
+し(shi),思,おもう(omou),Think  
+ほ(ho),歩,あるく(aruku),Walk  
+そう(sō),走,はしる(hashiru),Run  
+ぎん(gin),銀,ぎん(gin),Silver  
+じゅう(jū),住,すむ(sumu),Live  
+さく(saku),作,つくる(tsukuru),Make & Create  
+し(shi),使,つかう(tsukau),Use  
+たい(tai),待,まつ(matsu),Wait  
+ふ(fu),不,〜じゃない(〜janai),Not  
+しん(shin),心,こころ(kokoro),Heart & Mind  
+ぶん(bun),文,ふみ(fumi),Sentence & Writing  
+げん(gen),元,もと(moto),Origin & Source  
+おん(on),音,おと(oto),Sound  
+がく(gaku),楽,たのしい(tanoshii),Fun & Music  
+じ(ji),持,もつ(motsu),Hold & Have  
+えい(ei),映,うつす(utsusu),Reflect & Project  
+が(ga),画,え(e),Picture & Drawing  
+りょう(ryō),料,,Fee & Material  
+り(ri),理,ことわり(kotowari),Reason & Logic  
+ほう(hō),方,かた(kata),Direction & Way  
+だい(dai),台,だい(dai),Stand & Platform  
+じ(ji),字,あざ(aza),Character & Letter  
+しゅ(shu),主,あるじ(araji),Master & Main  
+い(i),以,もって(motte),By means of  
+きょ(kyo),去,さる(saru),Leave & Go Away  
+せい(sei),正,ただしい(tadashii),Correct & Right  
+でん(den),田,た(ta),Rice Field  
+どう(dō),同,おなじ(onaji),Same  
+めい(mei),明,あかるい(akarui),Bright & Clear  
+にく(niku),肉,きん(kin),Meat  
+せい(sei),世,よ(yo),World & Generation  
+かい(kai),界,,World & Realm  
+し(shi),仕,つかえる(tsukaeru),Serve & Work  
+じ(ji),事,こと(koto),Thing & Matter  
+こう(kō),工,こう(kō),Work & Construction  
+じょう(jō),場,ば(ba),Place & Field  
+おく(oku),屋,や(ya),Shop & Roof  
+りょ(ryo),旅,たび(tabi),Travel & Journey  
+どう(dō),動,うごく(ugoku),Move  
+べん(ben),勉,,Endeavor & Effort  
+きょう(kyō),強,つよい(tsuyoi),Strong & Strength  
+こう(kō),考,かんがえる(kangaeru),Think  
+そう(sō),送,おくる(okuru),Send  
+ばい(bai),売,うる(uru),Sell  
+し(shi),始,はじめる(hajimeru),Begin & Start  
+しゅう(shū),終,おわる(owaru),End  
+けい(kei),計,はかる(hakaru),Measure & Plan  
+けい(kei),兄,あに(ani),Older Brother  
+てい(tei),弟,おとうと(otōto),Younger Brother  
+し(shi),姉,あね(ane),Older Sister  
+まい(mai),妹,いもうと(imōto),Younger Sister  
+だい(dai),代,かえる(kaeru),Substitute & Generation  
+よう(yō),用,もちいる(mochiiru),Use  
+じ(ji),自,みずから(mizukara),Oneself  
+ち(chi),地,,Earth & Ground  
+ず(zu),図,はかる(hakaru),Map & Plan  
+かん(kan),館,,Building & Hall  
+えい(ei),英,,English & Excellent  
+てつ(tetsu),鉄,,Iron  
+ちょう(chō),町,まち(machi),Town  
+きょう(kyō),京,,Capital  
+み(mi),味,あじ(aji),Taste & Flavor  
+ど(do),度,たび(tabi),Degree & Occurrence  
+ふう(fū),風,かぜ(kaze),Wind & Style  
+よう(yō),洋,,Ocean & Western  
+ちゃ(cha),茶,,Tea  
+ちょう(chō),鳥,とり(tori),Bird  
+どう(dō),堂,,Hall  
+しつ(shitsu),室,,Room  
+しょく(shoku),色,いろ(iro),Color  
+せい(sei),青,あお(ao),Blue & Green  
+こく(koku),黒,くろ(kuro),Black  
+ひん(hin),品,しな(shina),Goods & Quality  
+ぶつ(butsu)・もつ(motsu),物,もの(mono),Thing & Object  
+ちゅう(chū),注,そそぐ(sosogu),Pour & Focus  
+い(i),意,,Idea & Meaning  
+い(i),医,,Medical & Doctor  
+しゃ(sha),者,もの(mono),Person  
+びょう(byō),病,やまい(yamai),Sickness  
+いん(in),院,,Institution & Building  
+きゅう(kyū),急,いそぐ(isogu),Hurry  
+しゅん(shun),春,はる(haru),Spring  
+か(ka),夏,なつ(natsu),Summer  
+しゅう(shū),秋,あき(aki),Autumn  
+とう(tō),冬,ふゆ(fuyu),Winter  
+しん(shin),親,おや(oya)・したしい(shitashii),Parent & Intimate  
+せつ(setsu),切,きる(kiru),Cut & Kind  
+とく(toku),特,,Special  
+べつ(betsu),別,わかれる(wakareru),Separate  
+しゃ(sha),写,うつす(utsusu),Copy & Photograph  
+しん(shin),真,ま(ma),True & Real  
+うん(un),運,はこぶ(hakobu),Carry & Luck  
+てん(ten),転,ころぶ(korobu),Turn & Roll  
+しつ(shitsu),質,たち(tachi),Quality & Nature  
+もん(mon),問,とい(toi)・とう(tou),Question  
+だい(dai),題,,Topic & Problem  
+とう(tō),答,こたえる(kotaeru),Answer  
+きょう(kyō),教,おしえる(oshieru),Teach  
+しゅう(shū),習,ならう(narau),Learn  
+き(ki),起,おきる(okiru),Wake Up  
+し(shi),死,しぬ(shinu),Die  
+あく(aku),悪,わるい(warui),Bad  
+じゅう(jū),重,おもい(omoi),Heavy  
+はつ(hatsu),発,たつ(tatsu),Depart & Emit  
+き(ki),帰,かえる(kaeru),Return  
+つう(tsū),通,とおる(tōru)・かよう(kayou),Pass & Commute  
+かい(kai),開,あける(akeru)・ひらく(hiraku),Open  
+しゅう(shū),集,あつまる(atsumaru)・あつめる(atsumeru),Gather  
+か(ka),歌,うた(uta),Song & Sing  
+ちゃく(chaku),着,きる(kiru)・つく(tsuku),Wear & Arrive  
+たい(tai),貸,かす(kasu),Lend  
+しゃく(shaku),借,かりる(kariru),Borrow  
+けん(ken),犬,いぬ(inu),Dog  
+ふく(fuku),服,,Clothes  
+けん(ken),建,たてる(tateru)・たつ(tatsu),Build  
+かい(kai),海,うみ(umi),Sea  
+いん(in),員,,Member  
+ぞく(zoku),族,,Family & Tribe  
+はん(han),飯,めし(meshi),Meal  
+や(ya),野,の(no),Field & Wild  
+さい(sai),菜,な(na),Vegetable  
+し(shi),止,とまる(tomaru)・とめる(tomeru),Stop  
+かん(kan),漢,,Chinese(Han)  
+けん(ken),研,とぐ(togu),Sharpen & Study  
+きゅう(kyū),究,きわめる(kiwameru),Research  
+し(shi),試,ためす(tamesu),Try  
+けん(ken),験,,Test  
+ない(nai),内,うち(uchi),Inside  
+たい(tai),体,からだ(karada),Body  
+ぜん(zen),全,まったく(mattaku)・すべて(subete),All & Whole  
+かい(kai),回,まわる(mawaru),Turn & Time  
+しょ(sho),所,ところ(tokoro),Place  
+こう(kō),公,おおやけ(ōyake),Public  
+えん(en),園,その(sono),Garden & Park  
+り(ri),利,きく(kiku),Benefit & Advantage  
+べん(ben),便,たより(tayori),Convenience & News  
+とう(tō),頭,あたま(atama),Head  
+ぶ(bu),部,,Department & Part  
+そ(so),祖,,Ancestor  
+ざ(za),座,すわる(suwaru),Sit  
+たい(tai),太,ふとい(futoi),Thick & Fat  
+てい(tei),低,ひくい(hikui),Low  
+たん(tan),短,みじかい(mijikai),Short  
+こう(kō),好,このむ(konomu)・すき(suki),Like  
+じゃく(jaku),若,わかい(wakai),Young  
+じゃく(jaku),弱,よわい(yowai),Weak  
+けい(kei),軽,かるい(karui),Light(in weight)  
+えん(en),遠,とおい(tooi),Far  
+しょ(sho),暑,あつい(atsui),Hot(weather)  
+かん(kan),寒,さむい(samui),Cold(weather)  
+ごう(gō)・がっ(gatt),合,あう(au),Fit & Match  
+でん(den),伝,つたえる(tsutaeru),Convey & Transmit  
+けつ(ketsu),決,きめる(kimeru)・きまる(kimaru),Decide  
+こん(kon),困,こまる(komaru),Be Troubled  
+へん(hen),返,かえす(kaesu),Return(an object)  
+えい(ei),泳,およぐ(oyogu),Swim  
+しょう(shō),消,けす(kesu)・きえる(kieru),Extinguish & Disappear  
+ぼう(bō),忘,わすれる(wasureru),Forget  
+こ(ko),呼,よぶ(yobu),Call  
+へい(hei),閉,しめる(shimeru)・しまる(shimaru),Close  
+いん(in),引,ひく(hiku),Pull  
+おう(ō),押,おす(osu),Push  
+しゅう(shū),拾,ひろう(hirou),Pick Up  
+しゃ(sha),捨,すてる(suteru),Throw Away  
+せつ(setsu),説,とく(toku),Explain  
+じゅ(ju),受,うける(ukeru),Receive  
+しゅ(shu),取,とる(toru),Take  
+せき(seki),席,,Seat  
+れん(ren),連,つれる(tsureru),Connect & Lead  
+ざ(za),座,すわる(suwaru),Sit  
+へん(hen),変,かわる(kawaru)・かえる(kaeru),Change  
+じょう(jō),乗,のる(noru),Ride  
+こう(kō),降,おりる(oriru)・ふる(furu),Descend & Fall  
+どう(dō),働,はたらく(hataraku),Work  
+ざん(zan),残,のこる(nokoru)・のこす(nokosu),Remain  
+ちょう(chō),調,しらべる(shiraberu),Investigate & Adjust  
+ぞく(zoku),続,つづく(tsuzuku)・つづける(tsuzukeru),Continue  
+れん(ren),練,ねる(neru),Practice  
+らく(raku),落,おちる(ochiru)・おとす(otosu),Fall & Drop  
+しん(shin),寝,ねる(neru),Sleep  
+ち(chi),遅,おくれる(okureru)・おそい(osoi),Late & Slow  
+がん(gan),顔,かお(kao),Face  
+しゅ(shu),首,くび(kubi),Neck  
+せい(sei),声,こえ(koe),Voice  
+と(to),都,みやこ(miyako),Capital & Metropolis  
+けん(ken),県,,Prefecture  
+く(ku),区,,District  
+し(shi),市,いち(ichi),City & Market  
+そん(son),村,むら(mura),Village  
+みん(min),民,たみ(tami),People & Citizen  
+さん(san),産,うむ(umu)・うまれる(umareru),Produce & Give Birth  
+りん(rin),林,はやし(hayashi),Grove  
+しん(shin),森,もり(mori),Forest  
+ち(chi),池,いけ(ike),Pond  
+もん(mon),門,かど(kado),Gate  
+やく(yaku),薬,くすり(kusuri),Medicine  
+せん(sen),洗,あらう(arau),Wash  
+しん(shin),進,すすむ(susumu)・すすめる(susumeru),Advance  
+あん(an),暗,くらい(kurai),Dark  
+こう(kō),光,ひかる(hikaru)・ひかり(hikari),Light  
+せん(sen),線,,Line  
+
