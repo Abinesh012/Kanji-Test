@@ -1,0 +1,86 @@
+イチ,一,ひと,One
+ニ,二,ふた,Two
+サン,三,み,Three
+シ,四,よん / よ,Four
+ゴ,五,いっ,Five
+ロク,六,む,Six
+シチ,七,なな,Seven
+ハチ,八,や / よう,Eight
+キュウ / ク,九,ここの,Nine
+ジュウ,十,とお,Ten
+ジン / ニン,人,ひと,Person
+メイ,名,な,Name
+カタ,方,かた,Person 
+ホン,本,もと,Book / Origin
+カ,何,なに / なん,What
+ダイ,大,おお,Big
+ガク,学,まな,Study / Learn
+シャ,社,,Company / Shrine
+イン,員,,Member 
+カイ,会,あ,Meeting / To meet
+セン,先,さき,Ahead / Previous
+セイ / ショウ,生,い / う,Life / Birth
+コウ,行,いく,To go
+ライ,来,きます,To come
+シャ,車,くるま,Car / Vehicle
+ヒャク,百,もも,Hundred
+セン,千,ち,Thousand
+マン,万,,Ten thousand
+エン,円,まる,Yen
+マイ,毎,ごと,Every
+ジ,時,とき,Time / Hour
+フン,分,わける,Minute 
+ハン,半,,Half
+コク,国,くに,Country
+ニチ,日,ひ / び / か,Day / Sunday
+ゲツ,月,つき,Monday 
+カ,火,ひ,Tuesday 
+スイ,水,みず,Wednesday 
+モク,木,き,Thursday 
+キン,金,かね,Friday 
+ド,土,つち,Saturday
+ショ,書,かきます,To Write
+ユウ,友,とも,Friend
+ハハ,母,はは,Mother
+チチ,父,ちち,Father
+ネン,年,とし,Year
+イマ,今,いま,Now
+シュウ,週,,Week
+キュウ,休,やすみ,Rest / Break
+ゼン,前,まえ,Before
+ゴ,後,あと / うしろ,Later / Behind
+ゴ,午,なし,Noon
+チョウ,朝,あさ,Morning
+チュウ,昼,ひる,Noon / Daytime
+バン,晩,,Evening
+ヤ,夜,よる/よ,Night
+コウ,校,,School
+チョウ,町,まち,Town / City
+キ,帰,かえる,To return
+ケン,見,みます,To see / Look
+ブン,聞,き(きます),To hear / Ask
+ドク,読,よみます / よむ,To read
+ショク,食,た(べます) / たべる,To eat
+いん,飲,のみます / のむ,To drink
+,買,かいます,To buy
+ブツ,物,もの,Thing / Object
+サン,山,やま,Mountain
+,白,しろ,White
+,赤,あか,Red
+,黒,くろ,Black
+,青,あお,Blue
+アン,安,やす,Peaceful / Comfort / Cheap
+コウ,高,たかい,Tall / Expensive
+ショウ,小,ちいさい,Small
+ダン,男,おとこ,Man
+ジョ,女,おんな,Woman
+ジョウ,上,うえ,Above / Up
+カ / ゲ,下,した,Below / Down
+サ,左,ひだり,Left
+ウ / ユウ,右,みぎ,Right
+チュウ,中,なか,Inside / Middle
+モン,門,かど,Gate
+カン,間,あいだ,Between / Interval
+キン,近,ちかく,Near / Nearby
+シュ,手,て,Hand
+,魚,さかな,Fish
