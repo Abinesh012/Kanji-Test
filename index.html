@@ -473,17 +473,18 @@
 
                 
                 document.getElementById('answer').innerHTML = `
-                    ${currentKanji.pronunciation ? `
+                                    ${currentKanji.meaning ? `
                     <span style="color: black; font-size: 1.5em;">
-                    <strong>音読み :</strong>
+                        <strong>訓 :</strong>
                     </span>
-                    <span style="font-size: 1.5em;">${currentKanji.pronunciation}</span> 
-                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` : ''}
-                    ${currentKanji.meaning ? `
+                    <span style="font-size: 1.5em;">${currentKanji.meaning}</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` : ''}
+
+                ${currentKanji.pronunciation ? `
                     <span style="color: black; font-size: 1.5em;">
-                        <strong>訓読み : </strong>
-                    </span>     
-                    <span style="font-size: 1.5em;">${currentKanji.meaning}</span>` : ''}`;
+                        <strong>音 :</strong>
+                    </span>
+                    <span style="font-size: 1.5em;">${currentKanji.pronunciation}</span>` : ''}`;
 
                 document.getElementById('answer').style.display = 'none';
 
