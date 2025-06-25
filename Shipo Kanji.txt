@@ -84,3 +84,31 @@
 キン,近,ちかく,Near / Nearby
 シュ,手,て,Hand
 ,魚,さかな,Fish
+ケン,犬,いぬ,Dog
+そう,早,はやい,Fast
+ケイ,計,はか,Measure
+ガイ,外,そと,Outside
+ケイ/キョウ,兄,あに / にい,Older Brother
+ダイ,弟,おとうと,Younger Brother
+シ,姉,あね,Older Sister
+マイ,妹,いもうと,Younger Sister
+カ,家,いえ / うち,House / Home
+ソク,族,,Family 
+,春,はる,Spring
+,夏,なつ,Summer
+,秋,あき,Autumn
+,冬,ふゆ,Winter
+キ,気,,Spirit
+テン,天,,Heaven
+タ,多,おおい,Many
+ショウ,少,すく,Few / A little
+ゲン / ガン,元,もと,Origin 
+ホ,歩,あるく,Walking
+ニュウ,入,はい(ります) / いれ(ます),Enter / Insert
+シュツ,出,だします / でます,Exit / Take out
+コウ,広,ひろい,Wide / Spacious 
+シ,止,とまります / とめます,Stop
+,雨,あめ,Rain
+,開けます,あけます/ひらきます,To open (transitive)
+,海,うみ,Sea / Ocean
+,川,かわ,River
