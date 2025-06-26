@@ -79,7 +79,7 @@
 サ,左,ひだり,Left
 ウ / ユウ,右,みぎ,Right
 チュウ,中,なか,Inside / Middle
-モン,門,かど,Gate
+モン,門,,Gate
 カン,間,あいだ,Between / Interval
 キン,近,ちかく,Near / Nearby
 シュ,手,て,Hand
