@@ -112,3 +112,7 @@
 ,開けます,あけます/ひらきます,To open (transitive)
 ,海,うみ,Sea / Ocean
 ,川,かわ,River
+セ,世,,World
+カイ,界,,Boundary
+エイ,映,,Reflect
+ガ,画,,Picture
