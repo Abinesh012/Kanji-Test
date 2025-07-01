@@ -109,7 +109,7 @@
 コウ,広,ひろい,Wide / Spacious 
 シ,止,(とまり/とめ)ます,Stop
 ,雨,あめ,Rain
-,開,あけます/ひらきます,To open (transitive)
+,開,(あけ/ひらき)ます,To open (transitive)
 ,海,うみ,Sea / Ocean
 ,川,かわ,River
 セ,世,,World
