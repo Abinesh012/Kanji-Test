@@ -208,11 +208,11 @@
         <br>
         <div id="buttonGroup">
             <button id="chooseFileBtn" onclick="openFile()">Load Questions</button>
-            <button id="prevQuestionBtn" style="display: none;" onclick="prevQuestion()">← Previous</button>
+            <button id="prevQuestionBtn" style="display: none;" onclick="prevQuestion()">← 前</button>
             <button id="showAnswerBtn" style="display: none;" onclick="showAnswer()">Show</button>
             <button id="hideAnswerBtn" style="display: none;" onclick="hideAnswer()">Hide</button>
-            <button id="nextQuestionBtn" style="display: none;" onclick="nextQuestion()">Next →</button>
-            <button id="endTestBtn" style="display: none;" onclick="endTest()">End Test</button>
+            <button id="nextQuestionBtn" style="display: none;" onclick="nextQuestion()">次 →</button>
+            <button id="endTestBtn" style="display: none;" onclick="endTest()">終</button>
             <button id="progressBtn" style="display: none;" onclick="showProgress()">Show Progress</button>
         </div><br/><br/>
         <div id="progressContainer" style="display: none;">
@@ -465,7 +465,7 @@
                 questionElement.innerHTML = `
                 <div style="font-size: 1.5em; color: #D2691E; font-weight: bold;">${questionText}</div>
                 <br>
-                <div style="font-size: 1.6em;"><strong>この漢字の音読みと訓読みを書きなさい</strong></div>
+                <div style="font-size: 1.7em;"><strong>この漢字の音読みと訓読みは何ですか</strong></div>
                 <br>
                 <div style="font-size: 2em; color: #6414FF; font-weight: bold;">${currentKanji.tamilMeaning}</div>
                 <br>
