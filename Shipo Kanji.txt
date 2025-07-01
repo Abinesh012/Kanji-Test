@@ -59,9 +59,9 @@
 キ,帰,かえる,To return
 ケン,見,みます,To see / Look
 ブン,聞,き(きます),To hear / Ask
-ドク,読,よみます / よむ,To read
-ショク,食,た(べます) / たべる,To eat
-いん,飲,のみます / のむ,To drink
+ドク,読,よみます,To read
+ショク,食,たべます,To eat
+いん,飲,のみます,To drink
 ,買,かいます,To buy
 ブツ,物,もの,Thing / Object
 サン,山,やま,Mountain
@@ -104,12 +104,12 @@
 ショウ,少,すく,Few / A little
 ゲン / ガン,元,もと,Origin 
 ホ,歩,あるく,Walking
-ニュウ,入,はい(ります) / いれ(ます),Enter / Insert
-シュツ,出,だします / でます,Exit / Take out
+ニュウ,入,(はいり/いれ)ます,Enter / Insert
+シュツ,出,(だし/で)ます,Exit / Take out
 コウ,広,ひろい,Wide / Spacious 
-シ,止,とまります / とめます,Stop
+シ,止,(とまり/とめ)ます,Stop
 ,雨,あめ,Rain
-,開けます,あけます/ひらきます,To open (transitive)
+,開,あけます/ひらきます,To open (transitive)
 ,海,うみ,Sea / Ocean
 ,川,かわ,River
 セ,世,,World
