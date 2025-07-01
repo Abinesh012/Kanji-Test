@@ -531,6 +531,50 @@
 
 
     </script>
+    <script>
+  let fullScreenEntered = false;
+
+  function enterFullScreen() {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function maybeEnterFullscreen() {
+    if (!fullScreenEntered) {
+      enterFullScreen();
+      fullScreenEntered = true;
+    }
+  }
+
+  document.getElementById('fileInput').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (!file || !file.name.endsWith('.txt')) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      const content = e.target.result;
+
+      console.log('Text file loaded:', content);
+      maybeEnterFullscreen();
+
+      // your other content-handling code...
+    };
+
+    reader.onerror = function () {
+      console.error('Error reading file');
+    };
+
+    reader.readAsText(file);
+  });
+</script>
+
 </body>
 
 </html>
