@@ -116,3 +116,11 @@
 カイ,界,,Boundary
 エイ,映,,Reflect
 ガ,画,,Picture
+カ,花,はな,Flower
+サ,茶,ちゃ / さ,Tea
+ゴ,語,かた(る),Language / To talk
+エイ,英,,England / English
+タイ,体,からだ,Body
+ソク,足,あし,Leg / Foot
+コウ,口,くち,Mouth
+ガン,顔,かお,Face
